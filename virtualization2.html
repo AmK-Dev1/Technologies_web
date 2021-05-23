@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #e3f9f6;
+            margin-left: 10%;
+            margin-right: 10%;
+            border: 2px dotted black;
+            padding: 10px 10px 10px 10px;
+            font-family: sans-serif;
+        }
+        
+        img {
+            background-color: #e3f9f6;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Virtualization</h1>
+
+        <p>In computing, <strong>Virtualization</strong> refers to the act of creating a virtual <em>(rather than actual)</em> version of something.
+            <br> This includes virtual computer hardware, virtual storage devices and virtual network ressources.
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1>Levels of Virtualization</h1>
+        <ol>
+            <li><strong>Virtualization at Instruction Set Architecture (ISA) level</strong><br>
+                <p>Every machine has an instuction set. This Instruction set is an interface between software and hardwar. Using this instuction software can communicate with hardware
+                </p>
+            </li>
+
+            <li><strong>Virtualization at Operating System (O.S.) level</strong><br>
+                <p>In Virtualization at HAL level each virtual machine is built from scratch i.e. by installing O.S., application suites, networking systems, etc.</p>
+                <ul>
+                    <li>In cloud sometimes, we need to initialize 100 virtual machines at a single time, if we use Virtualization at Hardware abstraction layer (HAL) level this can take too much time.</li>
+                    <li>So, to overcome this in Virtualization at Operating system level we share operating system between Virtual machines along with the hardware.</li>
+                </ul>
+            </li>
+            <br>
+
+            <div>
+                <img src="static/images/image1.png" alt="" height="400" width="500">
+                <p>figure 1. Server and network Virtualization</p>
+            </div>
+
+        </ol>
+
+    </div>
+    <hr>
+
+    <div>
+        <p><a href="#">Clic here</a> for more details</p>
+
+    </div>
+
+
+</body>
+
+</html>
