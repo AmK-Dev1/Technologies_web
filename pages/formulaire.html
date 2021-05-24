@@ -6,117 +6,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Premier Formulaire</title>
+
     <style>
-        .form_1 {
-            display: inline-block;
-            width: 49%;
-        }
-        
-        .form_2 {
-            display: inline-block;
-            width: 49%;
+        table {
+            width: 100%;
         }
     </style>
 </head>
 
-<body id="body">
+<body>
     <h1>Votre Avis Nous Intéresse</h1>
 
-    <div class="form_1">
-        <fieldset>
-            <legend>Informations Personnelles</legend>
+    <table>
+        <tr>
+            <td>
+                <div class="form_1">
+                    <fieldset>
+                        <legend>Informations Personnelles</legend>
 
-            <form action="">
-                <ol>
-                    <li>
-                        <label for="nom">Nom</label>
-                        <input type="text" name="nom" id="">
-                    </li>
+                        <form action="">
+                            <ol>
+                                <li>
+                                    <label for="nom">Nom</label>
+                                    <input type="text" name="nom" id="">
+                                </li>
 
-                    <li>
-                        <label for="date">Date de naissance</label>
-                        <input type="date" name="date" id="">
-                    </li>
+                                <li>
+                                    <label for="date">Date de naissance</label>
+                                    <input type="date" name="date" id="">
+                                </li>
 
-                    <li>
-                        <label for="site">Site</label>
-                        <input type="url" name="site" id="" placeholder="http://monsite.com" pattern="https?://.+">
-                    </li>
+                                <li>
+                                    <label for="site">Site</label>
+                                    <input type="url" name="site" id="" placeholder="http://monsite.com" pattern="https?://.+">
+                                </li>
 
-                    <li>
-                        <label for="emploi">Emploi</label>
-                        <input type="text" name="emploi" id="emploi" list="emploi_list">
-                        <datalist id="emploi_list">
-                            <option value="Etudiant">
-                            <option value="Administrateur Réseau">
-                            <option value="Dévloppeur web">
-                            <option value="Web designer">
-                            <option value="DevOps">
-                        </datalist>
-                    </li>
+                                <li>
+                                    <label for="emploi">Emploi</label>
+                                    <input type="text" name="emploi" id="emploi" list="emploi_list">
+                                    <datalist id="emploi_list">
+                                        <option value="Etudiant">
+                                        <option value="Administrateur Réseau">
+                                        <option value="Dévloppeur web">
+                                        <option value="Web designer">
+                                        <option value="DevOps">
+                                    </datalist>
+                                </li>
 
-                    <li>
-                        <label for="salaire">Approx Salaire annuel</label>
-                        <br>
-                        <input type="number" name="salaire" id="salaire" min="0" step="1000" placeholder="$">
-                    </li>
+                                <li>
+                                    <label for="salaire">Approx Salaire annuel</label>
+                                    <br>
+                                    <input type="number" name="salaire" id="salaire" min="0" step="1000" placeholder="$">
+                                </li>
 
-                </ol>
-            </form>
+                            </ol>
+                        </form>
 
-        </fieldset>
-    </div>
+                    </fieldset>
+                </div>
+            </td>
 
-    <div class="form_2">
-        <fieldset>
-            <legend>Informations de Contact</legend>
+            <td>
 
-            <form action="">
-                <ol>
-                    <li>
-                        <label for="addr_1">Adresse ligne 1</label><br>
-                        <input type="text" name="addr_1" id="addr_1">
-                    </li>
-                    <li>
-                        <label for="addr_2">Adresse ligne 2</label><br>
-                        <input type="text" name="addr_2" id="addr_2">
-                    </li>
-                    <li>
-                        <label for="pays">Pays</label>
-                        <input type="text" name="pays" id="pays" list="pays_list">
-                        <datalist id="pays_list">
+                <div class="form_2">
+                    <fieldset>
+                        <legend>Informations de Contact</legend>
+
+                        <form action="">
+                            <ol>
+                                <li>
+                                    <label for="addr_1">Adresse ligne 1</label><br>
+                                    <input type="text" name="addr_1" id="addr_1">
+                                </li>
+                                <li>
+                                    <label for="addr_2">Adresse ligne 2</label><br>
+                                    <input type="text" name="addr_2" id="addr_2">
+                                </li>
+                                <li>
+                                    <label for="pays">Pays</label>
+                                    <input type="text" name="pays" id="pays" list="pays_list">
+                                    <datalist id="pays_list">
                             <option value="Algérie">
                             <option value="Maroc">
                             <option value="Tunisie">
                         </datalist>
-                    </li>
-                    <li>
-                        <label for="tel">Tél</label>
-                        <input type="tel" name="tel" id="" placeholder="eg: +213 67...">
-                    </li>
-                    <li>
-                        <label for="courriel">Courriel</label>
-                        <input type="email" name="courriel" id="" placeholder="">
-                    </li>
+                                </li>
+                                <li>
+                                    <label for="tel">Tél</label>
+                                    <input type="tel" name="tel" id="" placeholder="eg: +213 67...">
+                                </li>
+                                <li>
+                                    <label for="courriel">Courriel</label>
+                                    <input type="email" name="courriel" id="" placeholder="">
+                                </li>
 
-                </ol>
-            </form>
+                            </ol>
+                        </form>
 
-        </fieldset>
-    </div>
-    <div>
-        <h1><strong>Préférences</strong></h1>
+                    </fieldset>
+                </div>
+            </td>
+        </tr>
+    </table>
 
-        <label for="color">Choisir une couleur</label>
-        <input type="color" id="color" name="color" value="#000">
-        <span id="color_output"></span>
-        <br>
-        <label for="slider">Sur une échelle de 1 a 10, quel est cotre degré d'enthousiasme pour HTML5 ?</label>
-        <input type="range" min="0" max="10" value="5" class="slider" id="slider">
-        <span id="value"><strong></strong></span>
-        <br>
-        <input type="submit" name="envoyer" id="">
-    </div>
+
+
+    <section id="préference">
+        <div>
+            <h1><strong>Préférences</strong></h1>
+        </div>
+
+        <div>
+            <label for="color">Choisir une couleur</label>
+            <input type="color" id="color" name="color" value="#000">
+            <span id="color_output"></span>
+        </div>
+
+        <div>
+            <label for="slider">Sur une échelle de 1 a 10, quel est cotre degré d'enthousiasme pour HTML5 ?</label>
+            <input type="range" min="0" max="10" value="5" class="slider" id="slider">
+            <span id="value"><strong></strong></span>
+        </div>
+
+        <div>
+            <input type="submit" name="envoyer" id="">
+        </div>
+    </section>
 
 
     <script>
