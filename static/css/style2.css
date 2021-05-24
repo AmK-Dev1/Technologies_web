@@ -1,0 +1,57 @@
+body {
+    margin: 25px;
+}
+
+#triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 100px solid transparent;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
+}
+
+#ovale {
+    width: 200px;
+    height: 100px;
+    border-radius: 90%;
+    background: #2d81f7;
+}
+
+.form {
+    padding: 1rem;
+    width: 300px;
+    height: 350px;
+    background: dodgerblue;
+    border-radius: 5%;
+    color: white;
+    box-shadow: 1px 1px 15px black;
+}
+
+.form h1 {
+    font-size: xx-large;
+    text-shadow: 2px 2px 10px black;
+}
+
+.my_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.my_table td,
+.my_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.my_table tr:nth-child(odd) {
+    background-color: #dbf2fd;
+}
+
+.my_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: dodgerblue;
+    color: white;
+}
