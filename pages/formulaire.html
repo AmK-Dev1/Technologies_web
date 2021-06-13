@@ -43,14 +43,13 @@
 
                                 <li>
                                     <label for="emploi">Emploi</label>
-                                    <input type="text" name="emploi" id="emploi" list="emploi_list">
-                                    <datalist id="emploi_list">
-                                        <option value="Etudiant">
-                                        <option value="Administrateur Réseau">
-                                        <option value="Dévloppeur web">
-                                        <option value="Web designer">
-                                        <option value="DevOps">
-                                    </datalist>
+                                    <select name="emploi" id="">
+                                        <option value="Etudiant">Etudiant</option>
+                                        <option value="Administrateur Réseau">Administrateur Réseau</option>
+                                        <option value="Dévloppeur web">Dévloppeur web</option>
+                                        <option value="DevOps">DevOps</option>
+                                      </select>
+
                                 </li>
 
                                 <li>
@@ -84,12 +83,11 @@
                                 </li>
                                 <li>
                                     <label for="pays">Pays</label>
-                                    <input type="text" name="pays" id="pays" list="pays_list">
-                                    <datalist id="pays_list">
-                            <option value="Algérie">
-                            <option value="Maroc">
-                            <option value="Tunisie">
-                        </datalist>
+                                    <select name="pays" id="">
+                                        <option >Algérie</option>
+                                        <option >Maroc</option>
+                                        <option>Tunisie</option>
+                                      </select>
                                 </li>
                                 <li>
                                     <label for="tel">Tél</label>
@@ -141,7 +139,7 @@
         output.innerHTML = slider.value;
 
         slider.oninput = function() {
-            output.innerHTML = this.value;
+            output.innerHTML = slider.value;
         }
 
         //<js code pour changer background
